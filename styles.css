@@ -414,3 +414,145 @@ body {
   color: #fff;
   margin-bottom: 30px;
 }
+
+/* Portfolio Section */
+.portfolio {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #ff6619;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 80px;
+  height: 2px;
+  background-color: #ff6619;
+  margin: 0 auto 50px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.category {
+  padding: 10px 20px;
+  color: #ff6619;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.category:hover,
+.category.active {
+  color: #fff;
+}
+
+.category.active {
+  border-bottom: 2px solid #ff6619;
+}
+
+/* Project Gallery */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-item {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-category {
+  color: #ff6619;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 1px solid #ff6619;
+  padding: 5px 15px;
+}
+
+
+.button-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.all-projects-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.button-outline {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: -6px;
+  bottom: -6px;
+  border: 1px solid white;
+  z-index: 1;
+}
